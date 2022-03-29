@@ -2,13 +2,19 @@
 
 
 class TokensNotFound(NameError):
-    """Необходимых токены недоступны."""
+    """Необходимые токены недоступны."""
 
     pass
 
 
 class PraktikumApiError(Exception):
     """Ошибка на сервере практикума."""
+
+    pass
+
+
+class TelegramMessageError(Exception):
+    """Ошибка отправки сообщения в телеграм."""
 
     pass
 
