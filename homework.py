@@ -139,7 +139,7 @@ def main() -> None:
     if not check_tokens:
         logger.critical(
             'Отсутствуют обязательные переменные окружения'
-            )
+        )
         raise TokensNotFound
 
     bot = telegram.Bot(token=TELEGRAM_TOKEN)
