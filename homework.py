@@ -65,9 +65,7 @@ def get_api_answer(current_timestamp: int) -> Dict[str, Any]:
 
     except Exception as exc:
         logger.exception(
-            'Cбой в работе программы: {}. Код ответа API: {}'.format(
-                exc, api_answer.status_code
-            )
+            'Cбой в работе программы: {}.'.format(exc)
         )
         raise PraktikumApiError from exc
 
