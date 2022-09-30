@@ -163,6 +163,8 @@ def main() -> None:
         except Exception as error:
             message = f'Сбой в работе программы: {error}'
 
+            logger.exception(message)
+
             if last_message != message:
                 last_message = message
                 send_message(bot, message)
